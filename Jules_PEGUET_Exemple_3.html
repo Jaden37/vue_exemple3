@@ -129,7 +129,7 @@
                 <!-- Display the name and price for every entry in the array .
                  Vue.js has a built in currency filter for formatting the price -->
 
-                {{service.name}} <span> <input class="input" type="number" min='0' v-model="service.quantity"></input> {{service.price | currency}}</span>
+                {{service.name}} <span> <input class="input" type="number" min='0' max='5' v-model="service.quantity"></input> {{service.price | currency}}</span>
 
 
             </li>
